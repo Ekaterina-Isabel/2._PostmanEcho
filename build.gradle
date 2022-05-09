@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:4.3.0'
+    testImplementation 'io.rest-assured:json-schema-validator:4.3.0'
+}
+
+test {
+    useJUnitPlatform()
+}
