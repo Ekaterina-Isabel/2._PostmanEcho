@@ -5,11 +5,16 @@ plugins {
 group 'ru.netology'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = 11
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'io.rest-assured:rest-assured:4.3.0'
     testImplementation 'io.rest-assured:json-schema-validator:4.3.0'
 }
