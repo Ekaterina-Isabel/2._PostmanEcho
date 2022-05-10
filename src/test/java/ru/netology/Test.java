@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.equalTo;
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("some data") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("14/04/1991") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
