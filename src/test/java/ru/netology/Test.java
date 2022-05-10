@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data"))
+                .body("data", equalTo("14/04/1991"))
         ;
     }
 }
